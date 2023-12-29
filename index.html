@@ -8,7 +8,7 @@
   <title>Year1Hub</title>
 </head>
 <body>
-
+ 
   <!--navbar-->
   <div class="navbar">
     <div class="relative w-full bg-white">
@@ -130,7 +130,7 @@
               </li>
             </ul>
           </div>
-          <div class="hidden space-x-2 lg:block"><a href="login.html">
+          <div class="hidden space-x-2 lg:block"><a href="signUP.html">
             <button
               type="button"
               class="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -138,33 +138,12 @@
               Sign In
             </button>
           </a>
-            <button id="loginButton"
+            <a href="login.html"><button id="loginButton"
               type="button"
               class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Log In
-            </button>
-
-            <div id="loginCard" class="login-card hidden absolute mt-64 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl p-6 rounded-lg w-72">
-              <button id="cancelButton" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                      <path d="M.647 1.343a1 1 0 0 1 1.414 0L8 6.586 14.343.343a1 1 0 1 1 1.414 1.414L9.414 8l6.343 6.343a1 1 0 1 1-1.414 1.414L8 9.414l-6.343 6.343a1 1 0 0 1-1.414-1.414L6.586 8 .647 1.343z" />
-                  </svg>
-              </button>
-              <h2 class="text-2xl font-bold mb-4">Login</h2>
-              <label for="email" class="block text-gray-600 text-sm mb-2">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-2 mb-4 border border-gray-300 rounded">
-      
-              <label for="password" class="block text-gray-600 text-sm mb-2">Password:</label>
-              <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full p-2 mb-4 border border-gray-300 rounded">
-      
-              <button id="loginWithEmail" class="bg-gray-500 text-white font-bold py-2 px-4 rounded">Login with Email</button>
-      
-              <p class="mt-2 mb-2 text-gray-600">Or</p>
-      
-              <button id="loginWithGoogle" class="bg-red-500 text-white font-bold py-2 px-4 rounded">Login with Google</button>
-          </div>
-
+            </button></a>
 
 
 
@@ -1105,7 +1084,9 @@
       <p class="mt-4 text-lg text-gray-600">
         Our friendly team would love to hear from you.
       </p>
-      <form action="" class="mt-8 space-y-4">
+      <form action="https://api.web3forms.com/submit" method="POST" class="mt-8 space-y-4">
+        <input type="hidden" name="access_key" value="411d625d-3ec1-44d8-bfb3-a60acc8d6bc7">
+
         <div class="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
           <div class="grid w-full  items-center gap-1.5">
             <label
@@ -1115,7 +1096,7 @@
               First Name
             </label>
             <input
-              class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+            style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               type="text"
               id="first_name"
               placeholder="First Name"
@@ -1124,12 +1105,12 @@
           <div class="grid w-full  items-center gap-1.5">
             <label
               class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              for="last_name"
+              for="last_name" 
             >
               Last Name
             </label>
             <input
-              class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+            style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               type="text"
               id="last_name"
               placeholder="Last Name"
@@ -1144,7 +1125,7 @@
             Email
           </label>
           <input
-            class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+          style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
             type="text"
             id="email"
             placeholder="Email"
@@ -1158,7 +1139,7 @@
             Phone number
           </label>
           <input
-            class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+          style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
             type="tel"
             id="phone_number"
             placeholder="Phone number"
@@ -1172,14 +1153,14 @@
             Message
           </label>
           <textarea
-            class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+          style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
             id="message"
             placeholder="Leave us a message"
             cols="3"
           ></textarea>
         </div>
         <button
-          type="button"
+          type="submit"
           class="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           Send Message
@@ -1187,6 +1168,7 @@
       </form>
     </div>
   </div>
+  
   <img
     alt="Contact us"
     class="hidden max-h-full w-full rounded-lg object-cover lg:block"
