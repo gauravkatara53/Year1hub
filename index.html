@@ -1116,8 +1116,8 @@
             <input
             style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               type="text"
-              id="first_name"
-              placeholder="First Name"
+              id="first_name  compulsoryField"
+              placeholder="First Name" required
             />
           </div>
           <div class="grid w-full  items-center gap-1.5">
@@ -1131,7 +1131,7 @@
             style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               type="text"
               id="last_name"
-              placeholder="Last Name"
+              placeholder="Last Name" required
             />
           </div>
         </div>
@@ -1146,7 +1146,7 @@
           style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
             type="text"
             id="email"
-            placeholder="Email"
+            placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           />
         </div>
         <div class="grid w-full  items-center gap-1.5">
@@ -1160,7 +1160,7 @@
           style="color: black;" class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
             type="tel"
             id="phone_number"
-            placeholder="Phone number"
+            placeholder="Phone number" required pattern="[0-9]{10}"
           />
         </div>
         <div class="grid w-full  items-center gap-1.5">
