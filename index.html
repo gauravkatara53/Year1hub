@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+  <link rel="stylesheet" href="style.css">
   <title>Year1Hub</title>
 </head>
 <body>
@@ -168,7 +169,24 @@
           </div>
         </div>
       </div>
-      
+      <!--mobile view-->
+       <!-- Hamburger icon for mobile -->
+       <div class="lg:hidden">
+        <button id="burger-icon" class="text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <div id="mobile-menu" class="lg:hidden bg-blue-500 p-4 hidden">
+      <a href="#" class="text-white block mb-2">Home</a>
+      <a href="#" class="text-white block mb-2">About</a>
+      <a href="#" class="text-white block mb-2">Contact</a>
+      <!-- Add more links as needed -->
+  </div>
  
  
     </div>

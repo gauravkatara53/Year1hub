@@ -187,3 +187,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 })  
 });
+
+ // Toggle mobile menu visibility on button click
+ document.getElementById('burger-icon').addEventListener('click', function () {
+    var mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+});
