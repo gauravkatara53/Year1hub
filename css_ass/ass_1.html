@@ -1,19 +1,14 @@
-<!-- subjects.html -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Subjects</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-
-<body >
-
-<!--navbar-->
-<div class="navbar">
+<body>
+     <!--navbar-->
+  <div class="navbar">
     <div class="relative w-full bg-white">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div class="inline-flex items-center space-x-2">
@@ -133,7 +128,7 @@
               </li>
             </ul>
           </div>
-          <div class="hidden space-x-2 lg:block"><a href="login.html">
+          <div class="hidden space-x-2 lg:block"><a href="signUP.html">
             <button
               type="button"
               class="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -147,30 +142,9 @@
             >
               Log In
             </button></a>
-  
-            <div id="loginCard" class="login-card hidden absolute mt-64 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl p-6 rounded-lg w-72">
-              <button id="cancelButton" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                      <path d="M.647 1.343a1 1 0 0 1 1.414 0L8 6.586 14.343.343a1 1 0 1 1 1.414 1.414L9.414 8l6.343 6.343a1 1 0 1 1-1.414 1.414L8 9.414l-6.343 6.343a1 1 0 0 1-1.414-1.414L6.586 8 .647 1.343z" />
-                  </svg>
-              </button>
-              <h2 class="text-2xl font-bold mb-4">Login</h2>
-              <label for="email" class="block text-gray-600 text-sm mb-2">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-2 mb-4 border border-gray-300 rounded">
-      
-              <label for="password" class="block text-gray-600 text-sm mb-2">Password:</label>
-              <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full p-2 mb-4 border border-gray-300 rounded">
-      
-              <button id="loginWithEmail" class="bg-gray-500 text-white font-bold py-2 px-4 rounded">Login with Email</button>
-      
-              <p class="mt-2 mb-2 text-gray-600">Or</p>
-      
-              <button id="loginWithGoogle" class="bg-red-500 text-white font-bold py-2 px-4 rounded">Login with Google</button>
-          </div>
-  
-  
-  
-  
+
+
+
           </div>
           <div class="lg:hidden">
             <svg
@@ -192,82 +166,54 @@
           </div>
         </div>
       </div>
-      
-  
-  
+      <!--mobile view-->
+       <!-- Hamburger icon for mobile -->
+       <div class="lg:hidden">
+        <button id="burger-icon" class="text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <div id="mobile-menu" class="lg:hidden bg-blue-500 p-4 hidden">
+      <a href="#" class="text-white block mb-2">Home</a>
+      <a href="#" class="text-white block mb-2">About</a>
+      <a href="#" class="text-white block mb-2">Contact</a>
+      <!-- Add more links as needed -->
+  </div>
+ 
+ 
     </div>
 
-   
-    
-<!--new-->
-    <div class="px-4 md:px-10 py-4 md:py-7">
-    <div class="px-4 md:px-10 py-4 md:py-7">
-      <div class="flex items-center justify-between">
-          <!-- <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">Notes 🥲 </p> -->
-          <h2 class="text-3xl font-semibold mb-8">Notes 🥲  </h2>
-          <div class="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded">
-              <p>Sort By:</p>
-              <select aria-label="select" class="focus:text-indigo-600 focus:outline-none bg-transparent ml-1">
-                  <option class="text-sm text-indigo-800">Latest</option>
-                  <option class="text-sm text-indigo-800">Oldest</option>
-                  <option class="text-sm text-indigo-800">Latest</option>
-              </select>
+<div  class="bg-gray-100">
+  <div class="container mx-auto p-8">
+    <div>
+        <div class="flex">
+          <div class="w-1/2">
+            <!-- Text Content -->
+            <h1 class="text-2xl font-bold mb-2 mt- ">CSE 1 </h1>
           </div>
+    
+          <div class="w-1/2  flex justify-end">
+            <!-- Button -->
+            <button type="button" class=" text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 mt- dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Download</button>
+          </div>
+        </div>
       </div>
-  </div>
 
-
-  
-
-<!--------------------------------------------------------------------------------------->
-
-<div class="container rounded-md mx-auto px-8 py-2">
-   
-
-  <div class="overflow-x-auto">
-      <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-md">
-          
-          <tbody>
-              <!-- Example Note/Assignment Row -->
-              <tr>
-                  <td class="py-4 px-4 border-b">Computer Science 1</td>
-                  <td class="py-4 px-4 border-b"> </td>
-                  <td class="py-4">
-                      <a href="css_ass/ass_1.html">View</button></a>
-                  </td> 
-              </tr>
-
-              <!-- Add more rows as needed -->
-
-          </tbody>
-      </table>
+      <!--pdf file here-->
+    <div class="w-full h-screen">
+      <embed class="w-full h-full" src="ass_pdf/1_aboutcourse.pdf" type="application/pdf">
+    </div>
   </div>
 </div>
 
-<div class="container rounded-md mx-auto px-8 py-2">
-   
 
-  <div class="overflow-x-auto">
-      <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-md">
-          
-          <tbody>
-              <!-- Example Note/Assignment Row -->
-              <tr>
-                  <td class="py-4 px-4 border-b">Computer Science 2</td>
-                  <td class="py-4 px-4 border-b"> </td>
-                  <td class="py-4">
-                      <a href="css_ass/ass_2.html">View</button></a>
-                  </td> 
-              </tr>
 
-              <!-- Add more rows as needed -->
-
-          </tbody>
-      </table>
-  </div>
-</div>
 
 
 </body>
-
 </html>
